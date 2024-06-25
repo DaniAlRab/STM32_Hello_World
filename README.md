@@ -17,5 +17,8 @@ Java runtime version: 17.0.8.1+1
 Java version: 17.0.8.1
 
 
-Second: Verify Drivers of Stlink/V2 are Working Correctly.
+Second: Verify Drivers of Stlink/V2 are Working Correctly.(Try to Connect to you device)
+
+Third: Start a New STM32 Project and Select your device (device_selection.png)
+
 
