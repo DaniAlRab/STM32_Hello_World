@@ -1,4 +1,4 @@
-//On IDE Cube IDE this code are main.c - The Original Path is {Your_Project_Name/Core/Src/main.c}
+//On IDE STCube IDE this code is main.c - The Original Path is {Your_Project_Name/Core/Src/main.c}
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
