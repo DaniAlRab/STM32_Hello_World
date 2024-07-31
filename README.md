@@ -18,20 +18,20 @@ Java vendor: Eclipse Adoptium
 Java runtime version: 17.0.8.1+1
 Java version: 17.0.8.1
 
-# Second: Verify Drivers of Stlink/V2 are Working Correctly.
+# Second: Verify if Drivers of Stlink/V2 are Working Correctly.
 in linux terminal verify using the command: 
 
 `lsusb`
 
 Stlink have to apear between the listed devices.
 
-# Third: Start a New STM32 Project and Select your device (device_selection.png)
+# Third: Start a New STM32 Project and Select your device [(device_selection.png)](device_selection.png)
 
-# Fourth: Configure pins and signals (config_pins.png) 
+# Fourth: Configure pins and signals [(config_pins.png)](config_pins.png) 
 
-# Fifth: Enable Usart Signal (enable_USART.png)
+# Fifth: Enable Usart Signal [(enable_USART.png)](enable_USART.png)
 
-# Sixth: Generate default code for your device using (generate_code.png)
+# Sixth: Generate default code for your device using [(generate_code.png)](generate_code.png)
 after this step you will receive a main.c code "default", i recommend for test, compile, run and download to your device this file before try with the example code, this code will make nothing but with it you can test the connection between your programmer STlink, STM32 Device, and Compiler.
 
 # Seventh: Use example_hello_main.c as an example to make your own main.c file with Hello world message in loop.
@@ -39,9 +39,10 @@ verify your default code and use just necessary parts of example code.
 
 # Eigth: If your device, pinout, and Usart are the same that i have used you can copy the entire file instead of use as an example.
 
-# Nineth: Test your code with a TTL USB-serial converter to test Using RX TX and GND Pins (STM32-and-usb-to-ttl-connection.jpg).
+# Nineth: Test your code with a TTL USB-serial converter to test Using RX TX and GND Pins [(STM32-and-usb-to-ttl-connection.jpg)](STM32-and-usb-to-ttl-connection.jpg).
 
-# Tenth: Verify the result using minicom, Arduino IDE or other serial monitor (Serial_Test.png)
+# Tenth: Verify the result using minicom, Arduino IDE or other serial monitor [(Serial_Test.png)](Serial_Test.png)
+"
 "Baudrate 115200".
  
 
