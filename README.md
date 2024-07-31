@@ -21,7 +21,9 @@ Java version: 17.0.8.1
 # Second: Verify Drivers of Stlink/V2 are Working Correctly.
 in linux terminal verify using the command: 
 
-'lsusb'
+'''
+lsusb
+'''
 
 Stlink have to apear between the listed devices.
 
