@@ -8,7 +8,7 @@ FTDI - FT232RL - USB serial TTL Converter.
 This Little project prints a Hello world message in a Serial Terminal using an STM32G071G8U6TR
 
 
-# First: We have to install STM32 Cube IDE. Used version: (version.png)
+# First: We have to install STM32 Cube IDE. Used version: [(version.png)](version.png)
 
 STM32CubeIDE
 Version: 1.15.1
