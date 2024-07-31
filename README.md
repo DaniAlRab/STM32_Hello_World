@@ -32,7 +32,7 @@ Stlink have to apear between the listed devices.
 # Fifth: Enable Usart Signal (enable_USART.png)
 
 # Sixth: Generate default code for your device using (generate_code.png)
-after this step you will receive a main.c code "default", i recommend for test, compile, run and download to your device this file before try with the example code, this code will make nothing but with it you can test your your programmer(STlink, STM32, and Compiler).
+after this step you will receive a main.c code "default", i recommend for test, compile, run and download to your device this file before try with the example code, this code will make nothing but with it you can test the connection between your programmer STlink, STM32 Device, and Compiler.
 
 # Seventh: Use example_hello_main.c as an example to make your own main.c file with Hello world message in loop.
 verify your default code and use just necessary parts of example code.
