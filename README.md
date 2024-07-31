@@ -19,11 +19,11 @@ Java runtime version: 17.0.8.1+1
 Java version: 17.0.8.1
 
 # Second: Verify Drivers of Stlink/V2 are Working Correctly.
-in linux verify using the command: 
+in linux terminal verify using the command: 
 
-'''lsusb'''
+'lsusb'
 
-Stlink have to apear between the listed devices 
+Stlink have to apear between the listed devices.
 
 # Third: Start a New STM32 Project and Select your device (device_selection.png)
 
