@@ -1,15 +1,26 @@
-# STM32_Hello_World
+# STM32 Hello World Project
 
-Necessary devices:
+## Project Overview
+This project demonstrates how to set up and run a **Hello World** message on a Serial Terminal using an **STM32G071G8U6TR** microcontroller. The project includes installation steps, configuration guidelines, and testing procedures.
 
-STM32 Programmer - STlink/V2 or Higher. (firmware_STlink.png)
-FTDI - FT232RL - USB serial TTL Converter.
+---
 
-This Little project prints a Hello world message in a Serial Terminal using an STM32G071G8U6TR
+## Required Devices
+- **STM32 Programmer** - STLink/V2 or Higher
+  
+  ![Firmware](repository_folder/firmware_STlink.png)
 
+- **FTDI - FT232RL** - USB Serial TTL Converter
 
-# First: We have to install STM32 Cube IDE. Used version: [(version.png)](version.png)
+---
 
+## Setup Steps
+
+### **1. Install STM32CubeIDE**
+Used version:
+
+  ![Version](repository_folder/version.png)
+```
 STM32CubeIDE
 Version: 1.15.1
 Build: 21094_20240412_1041 (UTC)
@@ -17,35 +28,63 @@ OS: Linux, v.6.5.0-41-generic, x86_64 / gtk 3.24.33
 Java vendor: Eclipse Adoptium
 Java runtime version: 17.0.8.1+1
 Java version: 17.0.8.1
+```
 
-# Second: Verify if Drivers of Stlink/V2 are Working Correctly.
-in linux terminal verify using the command: 
+### **2. Verify STLink/V2 Drivers**
+Check if STLink/V2 is recognized in **Linux Terminal** using:
+```bash
+lsusb
+```
+STLink should appear among the listed devices.
 
-`lsusb`
+### **3. Start a New STM32 Project**
+Select your device in **STM32CubeIDE**
 
-Stlink have to apear between the listed devices.
+  ![Device Selection](repository_folder/device_selection.png)
 
-# Third: Start a New STM32 Project and Select your device [(device_selection.png)](device_selection.png)
+### **4. Configure Pins and Signals**
+Set up the required GPIO pins.
 
-# Fourth: Configure pins and signals [(config_pins.png)](config_pins.png) 
+  ![Pin Configuration](repository_folder/config_pins.png)
 
-# Fifth: Enable Usart Signal [(enable_USART.png)](enable_USART.png)
+### **5. Enable USART Signal**
+Activate **USART** for serial communication.
 
-# Sixth: Generate default code for your device using [(generate_code.png)](generate_code.png)
-after this step you will receive a main.c code "default", i recommend for test, compile, run and download to your device this file before try with the example code, this code will make nothing but with it you can test the connection between your programmer STlink, STM32 Device, and Compiler.
+  ![Enable USART](repository_folder/enable_USART.png)
 
-# Seventh: Use example_hello_main.c as an example to make your own main.c file with Hello world message in loop.
-verify your default code and use just necessary parts of example code.
+### **6. Generate Default Code**
+Use STM32CubeIDE to generate the base project code.
 
-# Eigth: If your device, pinout, and Usart are the same that i have used you can copy the entire file instead of use as an example.
+  ![Generate Code](repository_folder/generate_code.png)
 
-# Nineth: Test your code with a TTL USB-serial converter to test Using RX TX and GND Pins [(STM32-and-usb-to-ttl-connection.jpg)](STM32-and-usb-to-ttl-connection.jpg).
+After this step, you will receive a default `main.c` file. It is recommended to compile, run, and download this file to your device first before modifying it.
 
-# Tenth: Verify the result using minicom, Arduino IDE or other serial monitor [(Serial_Test.png)](Serial_Test.png)
-"
-"Baudrate 115200".
- 
+### **7. Implement Hello World Code**
+Use `example_hello_main.c` as a reference to modify your `main.c` file to print "Hello World" in a loop.
+- Verify the default code and include only necessary parts from the example.
 
+### **8. Direct Code Copy (Optional)**
+If your **device, pinout, and USART configuration** match the example setup, you can copy the entire file instead of modifying it manually.
 
+### **9. Test Your Code**
+Connect a **TTL USB-Serial Converter** to your STM32:
+- **RX, TX, and GND Pins**
 
+  ![Connection Diagram](repository_folder/STM32-and-usb-to-ttl-connection.jpg)
+
+### **10. Verify Serial Output**
+Use **Minicom, Arduino IDE, or another Serial Monitor** to verify the output.
+
+  ![Serial Test](repository_folder/Serial_Test.png)
+
+**Baud Rate: `115200`**
+
+---
+
+## Notes
+- Ensure proper connections between the **STLink programmer**, **STM32 device**, and **serial monitor**.
+- Debug and verify settings in **STM32CubeIDE** before running the program.
+- If any issues arise, check drivers, permissions, and baud rate settings.
+
+---
 
